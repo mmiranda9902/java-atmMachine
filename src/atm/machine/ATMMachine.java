@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atm.machine;
 
-/**
- *
- * @author mlarrubia
- */
+import java.util.Scanner;
+
 public class ATMMachine {
 
-    /**
-     * @param args the command line arguments
-     */
+    private static final String USERNAME = "user";
+    private static final int PIN = 1234;
+
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        Scanner kb = new Scanner(System.in);
+        boolean logIn = false;
+        System.out.println("Please enter your username.");
+        String user = kb.nextLine();
+        System.out.println("Please enter your pin.");
+        int password = kb.nextInt();
+        
+
 }
